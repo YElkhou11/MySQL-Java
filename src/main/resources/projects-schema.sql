@@ -44,7 +44,7 @@ CREATE TABLE material (
 	num_required INT,
 	cost DECIMAL (7,2),
 	PRIMARY KEY (material_id),
-	FOREIGN KEY (project_id) REFERENCES project (project_id)):
+	FOREIGN KEY (project_id) REFERENCES project (project_id) ON DELETE CASCADE);
 	
 	
 	
